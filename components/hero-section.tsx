@@ -14,7 +14,7 @@ export function HeroSection() {
         <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5">
           <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
           <span className="text-xs font-medium text-primary">
-            Cada especie cuenta
+            Cada Jorge cuenta, ni uno menos
           </span>
         </div>
 
