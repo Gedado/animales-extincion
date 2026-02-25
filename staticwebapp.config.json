@@ -1,0 +1,54 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/images/*.jpg",
+      "/_next/*",
+      "/*.ico",
+      "/*.png",
+      "/*.svg"
+    ]
+  },
+  "routes": [
+    {
+      "route": "/especie/leopardo-de-amur",
+      "rewrite": "/especie/leopardo-de-amur/index.html"
+    },
+    {
+      "route": "/especie/vaquita-marina",
+      "rewrite": "/especie/vaquita-marina/index.html"
+    },
+    {
+      "route": "/especie/orangutan-de-sumatra",
+      "rewrite": "/especie/orangutan-de-sumatra/index.html"
+    },
+    {
+      "route": "/especie/gorila-de-montana",
+      "rewrite": "/especie/gorila-de-montana/index.html"
+    },
+    {
+      "route": "/especie/tortuga-carey",
+      "rewrite": "/especie/tortuga-carey/index.html"
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html",
+      "statusCode": 200
+    }
+  },
+  "globalHeaders": {
+    "Cache-Control": "public, max-age=3600"
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".css": "text/css",
+    ".js": "application/javascript",
+    ".jpg": "image/jpeg",
+    ".png": "image/png",
+    ".svg": "image/svg+xml",
+    ".ico": "image/x-icon",
+    ".woff2": "font/woff2",
+    ".woff": "font/woff"
+  }
+}
